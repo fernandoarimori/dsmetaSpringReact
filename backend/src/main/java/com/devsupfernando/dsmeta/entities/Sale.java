@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 @Entity
 @Table(name = "tb_sales")
-public class Sales {
+public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,7 +14,7 @@ public class Sales {
     private Double amount;
     private LocalDate date;
 
-    public void Sale(){
+    public Sale(){
     }
 
     //getter/setter
